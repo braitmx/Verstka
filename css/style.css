@@ -5,6 +5,27 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@keyframes turn_angle {
+    0% {
+        background-image: url(../images/angle-turn1.png);
+    }
+    20% {
+        background-image: url(../images/angle-turn2.png);
+    }
+    40% {
+        background-image: url(../images/angle-turn3.png);
+    }
+    60% {
+        background-image: url(../images/angle-turn4.png);
+    }
+    80% {
+        background-image: url(../images/angle-turn5.png);
+    }
+    100% {
+        background-image: url(../images/angle-turn6.png);
+    }
+}
+
 .header {
     width: 782px;
     margin: 0 auto;
@@ -42,7 +63,7 @@ body {
 
 .menu__item {
     display: inline-block;
-    padding: 0px 9px;
+    padding: 0px 12.42px;
     padding-bottom: 10px;
     font-size: 14px;
     text-decoration: none;
@@ -54,7 +75,7 @@ body {
 }
 
 .menu__item:hover {
-    transition: 1s ease 0s;
+    transition: 0.5s ease 0s;
     border-bottom: 4px solid #b1d443;
 }
 
@@ -115,9 +136,15 @@ body {
 }
 
 .slider__info__text {
+    width: 267px;
+    height: 120px;
     position: absolute;
-    padding-top: 100px;
-    padding-left: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
 }
 
 .programs {
@@ -153,12 +180,18 @@ body {
 }
 
 .programs__therapy__angle {
-    width: 83px;
-    min-height: 42px;
+    width: 82px;
+    height: 41px;
     position: absolute;
     top: 78.5%;
-    left: 53%;
+    right: 0px;
     z-index: 0;
+    background-image: url(../images/angle1.png);
+}
+
+.programs__therapy__angle:hover {
+    animation: turn_angle 0.2s linear;
+    animation-fill-mode: forwards;
 }
 
 .info {
@@ -171,7 +204,6 @@ body {
 .info__img {
     width: 325px;
     min-height: 187px;
-    background-image: url(../images/lifestyle.jpg);
     float: left;
     margin-right: 40px;
 }
@@ -195,10 +227,14 @@ body {
 .banner {
     width: 100%;
     min-height: 400px;
-    background-image: url(../images/phone.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-top: 70px;
+}
+
+.banner__image {
+    display: block;
+    max-width: 100%;
+    min-height: inherit;
+    position: absolute;
 }
 
 .banner__info {
@@ -207,7 +243,7 @@ body {
     position: relative;
     box-sizing: border-box;
     z-index: 5;
-    top: 45px;
+    top: 32px;
     left: 55%;
     background-image: url(../images/banner-info.png);
     background-repeat: no-repeat;
@@ -246,7 +282,7 @@ body {
     font-size: 11px;
 }
 
-.more__item__arrow-gray {
+.more__item__arrow--gray {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -255,7 +291,7 @@ body {
     background-color: lightgray;
 }
 
-.more__item__arrow-green {
+.more__item__arrow--green {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -418,18 +454,18 @@ body {
     color: grey;
 }
 
-.bottom__menu__list__items_social {
+.bottom__menu__list__items--social {
     padding: 0;
     list-style-type: none;
     font-size: 12px;
 }
 
-.bottom__menu__list__items_social li {
+.bottom__menu__list__items--social li {
     padding: 13px 0;
     color: grey;
 }
 
-.bottom__menu__list__items_social li>i {
+.bottom__menu__list__items--social li>i {
     color: white;
     padding: 10px;
     background: #9cc038;
@@ -437,18 +473,18 @@ body {
     font-size: 20px;
 }
 
-.bottom__menu__list__items_contacts {
+.bottom__menu__list__items--contacts {
     padding: 0;
     list-style-type: none;
     font-size: 12px;
 }
 
-.bottom__menu__list__items_contacts li {
+.bottom__menu__list__items--contacts li {
     padding-bottom: 8px;
     color: grey;
 }
 
-.bottom__menu__list__items_contacts li>i {
+.bottom__menu__list__items--contacts li>i {
     color: #9cc038;
     background: none;
     font-size: 25px;
@@ -495,6 +531,7 @@ footer {
     }
     .menu__item {
         font-size: 13px;
+        padding: 0px 15px;
     }
     .slider {
         min-height: 350px;
@@ -515,8 +552,8 @@ footer {
         width: 600px;
     }
     .slider__info__text {
-        padding-top: 77px;
-        padding-left: 25px;
+        width: 243px;
+        height: 120px;
     }
     .programs {
         width: 700px;
@@ -527,9 +564,6 @@ footer {
     }
     .programs__therapy__more {
         left: 90%;
-    }
-    .programs__therapy__angle {
-        left: 75%;
     }
     .info {
         width: 700px;
@@ -612,6 +646,9 @@ footer {
         background: #fff;
         top: 40px;
     }
+    .menu__item {
+        padding: 5px 12px;
+    }
     .menu__item:first-child {
         border-bottom: 0;
     }
@@ -637,8 +674,8 @@ footer {
         margin: 35px auto;
     }
     .slider__info__text {
-        padding-top: 58px;
-        padding-left: 18px;
+        width: 146px;
+        height: 65px;
     }
     .slider__prev {
         width: 24px;
@@ -663,9 +700,6 @@ footer {
     }
     .programs__therapy__more {
         left: 90%;
-    }
-    .programs__therapy__angle {
-        left: 68.3%;
     }
     .info {
         width: 100%;

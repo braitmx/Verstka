@@ -29,25 +29,29 @@ body {
 .header {
     width: 782px;
     margin: 0 auto;
-    min-height: 42px;
+    min-height: 50px;
     position: relative;
+    padding-top: 7px;
 }
 
 .logo {
-    width: 182px;
+    width: 150px;
     float: left;
+    margin-top: 5px;
 }
 
 .logo__img {
     width: 32px;
     height: 32px;
-    background-image: url(../images/logo.png);
+    margin-top: 4px;
+    background-image: url(../images/logo1.png);
+    background-repeat: no-repeat;
     float: left;
 }
 
 .logo__text {
     float: left;
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -56,18 +60,19 @@ body {
     width: 500px;
     min-height: 32px;
     float: right;
-    padding-top: 11px;
+    padding-top: 18px;
     display: flex;
     justify-content: space-between;
 }
 
 .menu__item {
     display: inline-block;
-    padding: 0px 12.42px;
-    padding-bottom: 10px;
-    font-size: 14px;
+    padding: 0px 15px;
+    padding-bottom: 17px;
+    font-size: 13px;
     text-decoration: none;
     color: grey;
+    box-sizing: border-box;
 }
 
 .menu__item:first-child {
@@ -77,6 +82,7 @@ body {
 .menu__item:hover {
     transition: 0.5s ease 0s;
     border-bottom: 4px solid #b1d443;
+    color: black;
 }
 
 .touch__menu {
@@ -179,6 +185,10 @@ body {
     left: 86%;
 }
 
+.programs__therapy__more a {
+    color: white;
+}
+
 .programs__therapy__angle {
     width: 82px;
     height: 41px;
@@ -187,6 +197,13 @@ body {
     right: 0px;
     z-index: 0;
     background-image: url(../images/angle1.png);
+}
+
+.programs__therapy__angle a {
+    position: absolute;
+    top: 17px;
+    left: 58px;
+    color: white;
 }
 
 .programs__therapy__angle:hover {
@@ -249,8 +266,18 @@ body {
     background-repeat: no-repeat;
     font-size: 33px;
     color: white;
-    padding-top: 120px;
-    padding-left: 20px;
+}
+
+.banner__info__text {
+    width: 267px;
+    height: 120px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
 }
 
 .more {
@@ -298,6 +325,9 @@ body {
     box-sizing: border-box;
     padding-top: 4px;
     background-color: #b1d443;
+}
+
+.more__item__arrow--green a {
     color: white;
 }
 
@@ -343,6 +373,10 @@ body {
     position: absolute;
     top: 87%;
     left: 91%;
+}
+
+.bottom__info__left__link {
+    color: white;
 }
 
 .bottom__info__right {
@@ -413,9 +447,26 @@ body {
 }
 
 .reviews__block__angle {
+    width: 82px;
+    height: 41px;
     position: absolute;
-    top: 75.7%;
-    left: 63%;
+    top: 169px;
+    right: 0px;
+    z-index: 0;
+    background-image: url(../images/angle1.png);
+    background-repeat: no-repeat;
+}
+
+.reviews__block__angle:hover {
+    animation: turn_angle 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+.reviews__block__angle a {
+    position: absolute;
+    top: 17px;
+    left: 58px;
+    color: white;
 }
 
 .bottom__menu {
@@ -426,6 +477,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: #f6f6f6;
+    padding-bottom: 70px;
 }
 
 .bottom__menu__list {
@@ -494,8 +547,9 @@ body {
 footer {
     width: 782px;
     margin: 0 auto;
-    margin-top: 70px;
     min-height: 50px;
+    padding-top: 7px;
+    background: #f6f6f6;
 }
 
 .privacy {
@@ -505,8 +559,8 @@ footer {
 
 .privacy__text {
     float: left;
-    margin-top: 13px;
-    font-size: 12px;
+    margin-top: 17px;
+    font-size: 11px;
     color: grey;
 }
 
@@ -529,9 +583,11 @@ footer {
     .header {
         width: 700px;
     }
+    .menu {
+        padding-top: 15px;
+    }
     .menu__item {
-        font-size: 13px;
-        padding: 0px 15px;
+        padding-bottom: 15px;
     }
     .slider {
         min-height: 350px;
@@ -563,7 +619,7 @@ footer {
         margin-bottom: 40px;
     }
     .programs__therapy__more {
-        left: 90%;
+        left: 92%;
     }
     .info {
         width: 700px;
@@ -583,7 +639,10 @@ footer {
         font-size: 30px;
         background-image: url(../images/banner-info280.png);
         top: 35px;
-        padding-top: 90px;
+    }
+    .banner__info__text {
+        width: 243px;
+        height: 120px;
     }
     .more {
         width: 700px;
@@ -607,7 +666,7 @@ footer {
     }
     .reviews__block__angle {
         width: 80px;
-        left: 60%;
+        left: unset;
     }
     .reviews__block p {
         margin-top: 0;
@@ -621,6 +680,9 @@ footer {
     footer {
         width: 700px;
     }
+    .privacy__text {
+        margin-top: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -630,12 +692,19 @@ footer {
         min-height: 42px;
         position: relative;
     }
+    .logo__img {
+        margin-top: 0;
+    }
+    .logo__text {
+        margin-top: 0;
+    }
     .menu {
         display: none;
     }
     .touch__menu {
         display: block;
         padding-right: 5px;
+        padding-top: 7px;
     }
     .active {
         display: flex;
@@ -724,13 +793,15 @@ footer {
     .banner__info {
         width: 180px;
         height: 179px;
-        font-size: 18px;
+        font-size: 21px;
         background-image: url(../images/banner-info180.png);
-        padding-top: 65px;
-        padding-left: 11px;
         left: 0;
         right: 0;
         margin: auto;
+    }
+    .banner__info__text {
+        width: 146px;
+        height: 75px;
     }
     .more {
         width: 100%;
@@ -813,5 +884,15 @@ footer {
     }
     .bottom__menu__list {
         width: 44%;
+    }
+    footer {
+        width: 95%;
+        padding-top: 10px;
+    }
+    .privacy {
+        width: 140px;
+    }
+    .privacy__text {
+        margin-top: 13px;
     }
 }

@@ -409,6 +409,7 @@ body {
     width: 782px;
     margin: 0 auto;
     margin-top: 70px;
+    margin-bottom: 30px;
     min-height: 250px;
     display: flex;
     justify-content: space-between;
@@ -472,7 +473,7 @@ body {
 .bottom__menu {
     width: 782px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 35px;
     min-height: 250px;
     display: flex;
     justify-content: space-between;
@@ -482,9 +483,8 @@ body {
 }
 
 .bottom__menu__list {
-    width: 20%;
+    width: 24%;
     max-height: 210px;
-    padding: 10px;
 }
 
 .bottom__menu__list a {
@@ -535,6 +535,13 @@ body {
 .bottom__menu__list__items--contacts li {
     padding-bottom: 8px;
     color: grey;
+    position: relative;
+    padding: 13px 0 0 42px;
+    line-height: 1.5;
+}
+
+.bottom__menu__list__items--contacts li:last-child {
+    margin-top: 10px;
 }
 
 .bottom__menu__list__items--contacts li>i {
@@ -542,34 +549,63 @@ body {
     background: none;
     font-size: 25px;
     padding-right: 5px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
 }
 
 footer {
-    width: 782px;
-    margin: 0 auto;
-    min-height: 50px;
+    width: 100%;
+    min-height: 400px;
     padding-top: 7px;
     background: #f6f6f6;
 }
 
-.privacy {
+.footer__info {
+    width: 762px;
+    margin: 0 auto;
+}
+
+.footer__info__logo {
+    width: 150px;
+    float: left;
+    margin-top: 5px;
+}
+
+.footer__info__logo__img {
+    width: 25px;
+    height: 32px;
+    margin-top: 4px;
+    background-image: url(../images/logo__footer.png);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.footer__info__logo__text {
+    float: left;
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer__info__privacy {
     width: 182px;
     float: left;
 }
 
-.privacy__text {
+.footer__info__privacy__text {
     float: left;
     margin-top: 17px;
     font-size: 11px;
     color: grey;
 }
 
-.privacy__text a {
+.footer__info__privacy__text a {
     text-decoration: none;
     color: #9cc038;
 }
 
-.privacy__text a:hover {
+.footer__info__privacy__text a:hover {
     cursor: pointer;
 }
 
@@ -678,9 +714,12 @@ footer {
         width: 22%;
     }
     footer {
+        width: 100%;
+    }
+    footer__info {
         width: 700px;
     }
-    .privacy__text {
+    .footer__info__privacy__text {
         margin-top: 16px;
     }
 }
@@ -886,13 +925,15 @@ footer {
         width: 44%;
     }
     footer {
+        width: 100%;
+        min-height: 620px;
+        padding-top: 10px;
+    }
+    .footer__info {
         width: 95%;
         padding-top: 10px;
     }
-    .privacy {
+    .footer__info__privacy {
         width: 140px;
-    }
-    .privacy__text {
-        margin-top: 13px;
     }
 }

@@ -60,7 +60,6 @@ body {
     width: 500px;
     min-height: 32px;
     float: right;
-    padding-top: 18px;
     display: flex;
     justify-content: space-between;
 }
@@ -68,6 +67,7 @@ body {
 .menu__item {
     display: inline-block;
     padding: 0px 15px;
+    padding-top: 18px;
     padding-bottom: 17px;
     font-size: 13px;
     text-decoration: none;
@@ -83,6 +83,12 @@ body {
     transition: 0.5s ease 0s;
     border-bottom: 4px solid #b1d443;
     color: black;
+}
+
+.menu__item:focus {
+    transition: 0.5s ease 0s;
+    border-bottom: 4px solid #b1d443;
+    color: #373b40;
 }
 
 .touch__menu {
@@ -139,17 +145,22 @@ body {
     font-size: 33px;
     color: #b1d443;
     position: relative;
+    text-align: center;
+}
+
+.slider__info:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .slider__info__text {
-    width: 267px;
-    height: 120px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    max-width: 267px;
+    max-height: 240px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -0.35em;
     overflow: hidden;
 }
 
@@ -619,9 +630,6 @@ footer {
     .header {
         width: 700px;
     }
-    .menu {
-        padding-top: 15px;
-    }
     .menu__item {
         padding-bottom: 15px;
     }
@@ -644,8 +652,8 @@ footer {
         width: 600px;
     }
     .slider__info__text {
-        width: 243px;
-        height: 120px;
+        max-width: 243px;
+        max-height: 120px;
     }
     .programs {
         width: 700px;
@@ -782,8 +790,8 @@ footer {
         margin: 35px auto;
     }
     .slider__info__text {
-        width: 146px;
-        height: 65px;
+        max-width: 146px;
+        max-height: 65px;
     }
     .slider__prev {
         width: 24px;

@@ -58,13 +58,13 @@ body {
     padding-top: 7px;
 }
 
-.logo {
+.header__logo {
     width: 150px;
     float: left;
     margin-top: 5px;
 }
 
-.logo__img {
+.header__logo-img {
     width: 32px;
     height: 32px;
     margin-top: 4px;
@@ -73,14 +73,14 @@ body {
     float: left;
 }
 
-.logo__text {
+.header__logo-text {
     float: left;
     margin-top: 4px;
     font-size: 20px;
     font-weight: 600;
 }
 
-.menu {
+.header__menu {
     width: 500px;
     min-height: 32px;
     float: right;
@@ -88,7 +88,7 @@ body {
     justify-content: space-between;
 }
 
-.menu__item {
+.header__menu-item {
     display: inline-block;
     padding: 0px 15px;
     padding-top: 18px;
@@ -99,29 +99,29 @@ body {
     box-sizing: border-box;
 }
 
-.menu__item:first-child {
+.header__menu-item:first-child {
     border-bottom: 4px solid #b1d443;
 }
 
-.menu__item:hover {
+.header__menu-item:hover {
     transition: 0.5s ease 0s;
     border-bottom: 4px solid #b1d443;
     color: black;
 }
 
-.menu__item:focus {
+.header__menu-item:focus {
     transition: 0.5s ease 0s;
     border-bottom: 4px solid #b1d443;
     color: #373b40;
 }
 
-.touch__menu {
+.header__touch-menu {
     float: right;
     padding-top: 11px;
     display: none;
 }
 
-.touch__menu__href {
+.header__touch-menu-href {
     text-decoration: none;
     color: grey;
     font-size: 14px;
@@ -179,7 +179,7 @@ body {
     vertical-align: middle;
 }
 
-.slider__info__text {
+.slider__info-text {
     max-width: 267px;
     max-height: 240px;
     display: inline-block;
@@ -210,17 +210,17 @@ body {
     box-sizing: border-box;
 }
 
-.programs__therapy:hover .programs__therapy__angle {
+.programs__therapy:hover .programs__therapy-angle {
     animation: turn_angle 0.2s linear;
     animation-fill-mode: forwards;
 }
 
-.programs__therapy:not(:hover) .programs__therapy__angle {
+.programs__therapy:not(:hover) .programs__therapy-angle {
     animation: turn_around 0.2s linear;
     animation-fill-mode: forwards;
 }
 
-.programs__therapy__text {
+.programs__therapy-text {
     height: 87px;
     overflow: hidden;
 }
@@ -235,7 +235,7 @@ body {
     color: white;
 }
 
-.programs__therapy__angle {
+.programs__therapy-angle {
     width: 82px;
     height: 41px;
     position: absolute;
@@ -245,7 +245,7 @@ body {
     background-image: url(../images/angle1.png);
 }
 
-.programs__therapy__angle a {
+.programs__therapy-angle a {
     position: absolute;
     left: 42px;
     color: white;
@@ -278,11 +278,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.info__desc__sub-title {
+.info__desc-subtitle {
     color: #b1d443;
 }
 
-.info__desc__text {
+.info__desc-text {
     font-size: 11px;
     padding-right: 10px;
 }
@@ -314,7 +314,7 @@ body {
     color: white;
 }
 
-.banner__info__text {
+.banner__info-text {
     width: 267px;
     height: 120px;
     position: absolute;
@@ -351,11 +351,11 @@ body {
     color: #b1d443;
 }
 
-.more__item__text {
+.more__item-text {
     font-size: 11px;
 }
 
-.more__item__arrow--gray {
+.more__item-arrow--gray {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -364,7 +364,7 @@ body {
     background-color: lightgray;
 }
 
-.more__item__arrow--green {
+.more__item-arrow--green {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -373,11 +373,11 @@ body {
     background-color: #b1d443;
 }
 
-.more__item__arrow--green a {
+.more__item-arrow--green a {
     color: white;
 }
 
-.bottom__info {
+.bottom-info {
     width: 100%;
     min-height: 400px;
     background-color: #a3c83a;
@@ -386,7 +386,7 @@ body {
     box-sizing: border-box;
 }
 
-.bottom__info__wrap {
+.bottom-info__wrap {
     width: 782px;
     margin: 0 auto;
     height: 250px;
@@ -394,7 +394,7 @@ body {
     justify-content: space-between;
 }
 
-.bottom__info__left {
+.bottom-info__left {
     width: 49%;
     height: inherit;
     box-sizing: border-box;
@@ -403,13 +403,13 @@ body {
     position: relative;
 }
 
-.bottom__info__left__img {
+.bottom-info__left-img {
     position: absolute;
     width: 100%;
     height: inherit;
 }
 
-.bottom__info__left__wrap {
+.bottom-info__left-wrap {
     width: 320px;
     height: 190px;
     position: absolute;
@@ -421,16 +421,16 @@ body {
     overflow: hidden;
 }
 
-.bottom__info__left h3 {
+.bottom-info__left h3 {
     margin: 0;
 }
 
-.bottom__info__left__text {
+.bottom-info__left-text {
     font-size: 12px;
     line-height: 1.5;
 }
 
-.bottom__info__left__link {
+.bottom-info__left-link {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -438,7 +438,7 @@ body {
     padding: 13px 3px 8px 15px;
 }
 
-.bottom__info__right {
+.bottom-info__right {
     width: 49%;
     min-height: inherit;
     background: white;
@@ -448,17 +448,17 @@ body {
     position: relative;
 }
 
-.bottom__info__right h3 {
+.bottom-info__right h3 {
     margin: 0;
     color: #b1d443;
 }
 
-.bottom__info__right__text {
+.bottom-info__right-text {
     font-size: 12px;
     line-height: 1.5;
 }
 
-.bottom__info__right img {
+.bottom-info__right img {
     position: absolute;
     top: 80%;
     left: 75%;
@@ -484,12 +484,22 @@ body {
     position: relative;
 }
 
+.reviews__block:hover .reviews__block-angle {
+    animation: turn_angle 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+.reviews__block:not(:hover) .reviews__block-angle {
+    animation: turn_around 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
 .reviews__block img {
     float: left;
     padding: 10px;
 }
 
-.reviews__block__avatar {
+.reviews__block-avatar {
     width: 66px;
     height: 66px;
     float: left;
@@ -497,7 +507,7 @@ body {
     padding-bottom: 20px;
 }
 
-.reviews__block__avatar img {
+.reviews__block-avatar img {
     width: 100%;
     height: inherit;
     border-radius: 100%;
@@ -509,18 +519,18 @@ body {
     padding-right: 10px;
 }
 
-.reviews__block__text {
+.reviews__block-text {
     font-size: 12px;
     padding-left: 10px;
 }
 
-.reviews__block__quotes {
+.reviews__block-quotes {
     position: absolute;
     top: 10%;
     left: 75%;
 }
 
-.reviews__block__angle {
+.reviews__block-angle {
     width: 82px;
     height: 41px;
     position: absolute;
@@ -531,19 +541,14 @@ body {
     background-repeat: no-repeat;
 }
 
-.reviews__block__angle:hover {
-    animation: turn_angle 0.2s linear;
-    animation-fill-mode: forwards;
-}
-
-.reviews__block__angle a {
+.reviews__block-angle a {
     position: absolute;
-    top: 17px;
-    left: 58px;
+    right: 0;
     color: white;
+    padding: 15px 4px 8px 15px;
 }
 
-.bottom__menu {
+.bottom-menu {
     width: 782px;
     margin: 0 auto;
     margin-top: 35px;
@@ -555,43 +560,48 @@ body {
     padding-bottom: 70px;
 }
 
-.bottom__menu__list {
+.bottom-menu__list {
     width: 24%;
     max-height: 210px;
 }
 
-.bottom__menu__list a {
+.bottom-menu__list a {
     text-decoration: none;
     color: grey;
 }
 
-.bottom__menu__list a:hover {
+.bottom-menu__list a:hover {
     color: #9cc038;
 }
 
-.bottom__menu__list__items {
+.bottom-menu__list-items {
     padding: 0;
     list-style-type: none;
     font-size: 12px;
 }
 
-.bottom__menu__list__items li {
+.bottom-menu__list-items li {
     padding: 8px 0;
     color: grey;
 }
 
-.bottom__menu__list__items--social {
+.bottom-menu__list-items--social {
     padding: 0;
     list-style-type: none;
     font-size: 12px;
 }
 
-.bottom__menu__list__items--social li {
+.bottom-menu__list-items--social li {
     padding: 13px 0;
     color: grey;
 }
 
-.bottom__menu__list__items--social li>i {
+.bottom-menu__list-items--social a {
+    padding-top: 18px;
+    padding-bottom: 11px;
+}
+
+.bottom-menu__list-items--social i {
     color: white;
     padding: 10px;
     background: #9cc038;
@@ -599,13 +609,13 @@ body {
     font-size: 20px;
 }
 
-.bottom__menu__list__items--contacts {
+.bottom-menu__list-items--contacts {
     padding: 0;
     list-style-type: none;
     font-size: 12px;
 }
 
-.bottom__menu__list__items--contacts li {
+.bottom-menu__list-items--contacts li {
     padding-bottom: 8px;
     color: grey;
     position: relative;
@@ -613,11 +623,11 @@ body {
     line-height: 1.5;
 }
 
-.bottom__menu__list__items--contacts li:last-child {
+.bottom-menu__list-items--contacts li:last-child {
     margin-top: 10px;
 }
 
-.bottom__menu__list__items--contacts li>i {
+.bottom-menu__list-items--contacts li>i {
     color: #9cc038;
     background: none;
     font-size: 25px;
@@ -634,18 +644,18 @@ footer {
     background: #f6f6f6;
 }
 
-.footer__info {
+.footer-info {
     width: 762px;
     margin: 0 auto;
 }
 
-.footer__info__logo {
+.footer-info__logo {
     width: 150px;
     float: left;
     margin-top: 5px;
 }
 
-.footer__info__logo__img {
+.footer-info__logo-img {
     width: 25px;
     height: 32px;
     margin-top: 4px;
@@ -654,31 +664,31 @@ footer {
     float: left;
 }
 
-.footer__info__logo__text {
+.footer-info__logo-text {
     float: left;
     margin-top: 4px;
     font-size: 20px;
     font-weight: 600;
 }
 
-.footer__info__privacy {
+.footer-info__privacy {
     width: 182px;
     float: left;
 }
 
-.footer__info__privacy__text {
+.footer-info__privacy-text {
     float: left;
     margin-top: 17px;
     font-size: 11px;
     color: grey;
 }
 
-.footer__info__privacy__text a {
+.footer-info__privacy-text a {
     text-decoration: none;
     color: #9cc038;
 }
 
-.footer__info__privacy__text a:hover {
+.footer-info__privacy-text a:hover {
     cursor: pointer;
 }
 
@@ -692,7 +702,7 @@ footer {
     .header {
         width: 700px;
     }
-    .menu__item {
+    .header__menu-item {
         padding-bottom: 15px;
     }
     .slider {
@@ -713,7 +723,7 @@ footer {
     .slider__wrap {
         width: 600px;
     }
-    .slider__info__text {
+    .slider__info-text {
         max-width: 243px;
         max-height: 120px;
     }
@@ -733,7 +743,7 @@ footer {
     .info__desc {
         width: 335px;
     }
-    .info__desc__title {
+    .info__desc-title {
         font-size: 16px;
     }
     .banner {
@@ -746,23 +756,23 @@ footer {
         background-image: url(../images/banner-info280.png);
         top: 35px;
     }
-    .banner__info__text {
+    .banner__info-text {
         width: 243px;
         height: 120px;
     }
     .more {
         width: 700px;
     }
-    .bottom__info__wrap {
+    .bottom-info__wrap {
         width: 700px;
     }
-    .bottom__info__left__wrap {
+    .bottom-info__left-wrap {
         width: 283px;
     }
-    .bottom__info__wrap h3 {
+    .bottom-info__wrap h3 {
         font-size: 16px;
     }
-    .bottom__info__right img {
+    .bottom-info__right img {
         width: 80px;
         left: 77%;
         top: 83.7%;
@@ -773,26 +783,26 @@ footer {
     .reviews__block h3 {
         font-size: 16px;
     }
-    .reviews__block__angle {
+    .reviews__block-angle {
         width: 80px;
         left: unset;
     }
     .reviews__block p {
         margin-top: 0;
     }
-    .bottom__menu {
+    .bottom-menu {
         width: 700px;
     }
-    .bottom__menu__list {
+    .bottom-menu__list {
         width: 22%;
     }
     footer {
         width: 100%;
     }
-    footer__info {
+    footer-info {
         width: 700px;
     }
-    .footer__info__privacy__text {
+    .footer-info__privacy-text {
         margin-top: 16px;
     }
 }
@@ -804,16 +814,16 @@ footer {
         min-height: 42px;
         position: relative;
     }
-    .logo__img {
+    .header__logo-img {
         margin-top: 0;
     }
-    .logo__text {
+    .header__logo-text {
         margin-top: 0;
     }
-    .menu {
+    .header__menu {
         display: none;
     }
-    .touch__menu {
+    .header__touch-menu {
         display: block;
         padding-right: 5px;
         padding-top: 7px;
@@ -827,13 +837,13 @@ footer {
         background: #fff;
         top: 40px;
     }
-    .menu__item {
+    .header__menu-item {
         padding: 5px 12px;
     }
-    .menu__item:first-child {
+    .header__menu-item:first-child {
         border-bottom: 0;
     }
-    .menu__item:hover {
+    .header__menu-item:hover {
         transition: 1s ease 0s;
         border-bottom: 0;
         background: lightgray;
@@ -854,7 +864,7 @@ footer {
         right: 0;
         margin: 35px auto;
     }
-    .slider__info__text {
+    .slider__info-text {
         max-width: 146px;
         max-height: 65px;
     }
@@ -895,7 +905,7 @@ footer {
         margin: 0 auto;
         padding: 0 10px;
     }
-    .info__desc__title {
+    .info__desc-title {
         font-size: 16px;
     }
     .banner {
@@ -911,7 +921,7 @@ footer {
         right: 0;
         margin: auto;
     }
-    .banner__info__text {
+    .banner__info-text {
         width: 146px;
         height: 75px;
     }
@@ -926,43 +936,43 @@ footer {
         min-height: 130px;
         margin: 0 auto;
     }
-    .bottom__info {
+    .bottom-info {
         padding-top: 25px;
     }
-    .bottom__info__wrap {
+    .bottom-info__wrap {
         width: 100%;
         flex-direction: column;
         height: inherit;
     }
-    .bottom__info__left {
+    .bottom-info__left {
         width: 90%;
         min-height: 210px;
         margin: 0 auto;
         position: relative;
         box-sizing: border-box;
     }
-    .bottom__info__left__wrap {
+    .bottom-info__left-wrap {
         width: 90%;
         height: unset;
         box-sizing: border-box;
         padding: 25px 15px 10px 10px;
     }
-    .bottom__info__left__img {
+    .bottom-info__left-img {
         height: unset;
     }
-    .bottom__info__right {
+    .bottom-info__right {
         width: 90%;
         margin: 20px auto;
         padding: 0;
     }
-    .bottom__info__right__text {
+    .bottom-info__right-text {
         padding: 0 30px;
     }
-    .bottom__info__right h3 {
+    .bottom-info__right h3 {
         padding: 30px;
         padding-bottom: 5px;
     }
-    .bottom__info__right img {
+    .bottom-info__right img {
         display: block;
         float: right;
         position: unset;
@@ -977,29 +987,29 @@ footer {
         margin-bottom: 20px;
         padding-right: 0;
     }
-    .reviews__block__avatar {
+    .reviews__block-avatar {
         margin-right: 10px;
     }
-    .reviews__block__quotes {
+    .reviews__block-quotes {
         left: unset;
         right: 20px;
     }
     .reviews__block img {
         padding-right: 0;
     }
-    .reviews__block__text {
+    .reviews__block-text {
         padding-right: 10px;
     }
-    .reviews__block__angle {
+    .reviews__block-angle {
         left: unset;
         right: 0px;
     }
-    .bottom__menu {
+    .bottom-menu {
         width: 100%;
         margin-top: 35px;
         justify-content: space-around;
     }
-    .bottom__menu__list {
+    .bottom-menu__list {
         width: 44%;
     }
     footer {
@@ -1007,11 +1017,11 @@ footer {
         min-height: 620px;
         padding-top: 10px;
     }
-    .footer__info {
+    .footer-info {
         width: 95%;
         padding-top: 10px;
     }
-    .footer__info__privacy {
+    .footer-info__privacy {
         width: 140px;
     }
 }

@@ -355,16 +355,7 @@ body {
     font-size: 11px;
 }
 
-.more__item-arrow--gray {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 4px;
-    background-color: lightgray;
-}
-
-.more__item-arrow--green {
+.more__item-arrow {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -373,7 +364,15 @@ body {
     background-color: #b1d443;
 }
 
-.more__item-arrow--green a {
+.more__item-arrow:hover {
+    background-color: lightgray;
+}
+
+.more__item-arrow:hover .more__item-arrow-link {
+    color: black;
+}
+
+.more__item-arrow-link {
     color: white;
 }
 
@@ -401,6 +400,9 @@ body {
     color: white;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bottom-info__left-img {
@@ -412,13 +414,8 @@ body {
 .bottom-info__left-wrap {
     width: 320px;
     height: 190px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     overflow: hidden;
+    z-index: 100;
 }
 
 .bottom-info__left h3 {
@@ -443,6 +440,7 @@ body {
     min-height: inherit;
     background: white;
     box-sizing: border-box;
+    display: inline-block;
     padding: 30px;
     color: black;
     position: relative;
@@ -456,6 +454,8 @@ body {
 .bottom-info__right-text {
     font-size: 12px;
     line-height: 1.5;
+    overflow: hidden;
+    height: 125px;
 }
 
 .bottom-info__right img {
@@ -986,9 +986,6 @@ footer {
         min-height: 210px;
         margin-bottom: 20px;
         padding-right: 0;
-    }
-    .reviews__block-avatar {
-        margin-right: 10px;
     }
     .reviews__block-quotes {
         left: unset;
